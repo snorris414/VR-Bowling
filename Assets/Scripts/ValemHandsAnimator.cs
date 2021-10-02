@@ -8,20 +8,12 @@ public class ValemHandsAnimator : AbstractHandAnimator
     public GameObject handModelPrefab;
     private Animator handAnimator;
 
-    public ValemHandsAnimator(InputDevice targetDevice) : base(targetDevice) { }
-
-    public override GameObject getPrefab()
+    public ValemHandsAnimator(GameObject spawnedGameObject, Animator handAnimator) : base(spawnedGameObject)
     {
-        return handModelPrefab;
+        this.handAnimator = handAnimator;
     }
 
-    public override void SetSpawnedGameObject(GameObject spawnedGameObject)
-    {
-        base.SetSpawnedGameObject(spawnedGameObject);
-        handAnimator = spawnedGameObject.GetComponent<Animator>();
-    }
-
-    public override void UpdateHandAnimation()
+    public override void UpdateHandAnimation(InputDevice targetDevice)
     {
         if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {

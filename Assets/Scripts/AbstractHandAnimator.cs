@@ -8,12 +8,7 @@ public abstract class AbstractHandAnimator
     protected InputDevice targetDevice;
     protected GameObject spawnedGameObject;
 
-    public AbstractHandAnimator(InputDevice targetDevice)
-    {
-        this.targetDevice = targetDevice;
-    }
-
-    public virtual void SetSpawnedGameObject(GameObject spawnedGameObject)
+    public AbstractHandAnimator(GameObject spawnedGameObject)
     {
         this.spawnedGameObject = spawnedGameObject;
     }
@@ -22,10 +17,11 @@ public abstract class AbstractHandAnimator
     {
         return spawnedGameObject;
     }
-
-    public abstract GameObject getPrefab();
-
-    public abstract void UpdateHandAnimation();
+    public abstract void UpdateHandAnimation(InputDevice targetDevice);
+    public virtual void BeforeGameObjectActive(HandPresence handPresence)
+    {
+        // noop
+    }
     //public abstract void ActivateGameObject();
     //public abstract void DeactivateGameObject();
 }

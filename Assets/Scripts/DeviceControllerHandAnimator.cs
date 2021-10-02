@@ -5,20 +5,11 @@ using UnityEngine.XR;
 
 public class DeviceControllerHandAnimator : AbstractHandAnimator
 {
-    public List<GameObject> controllerPrefabs;
-
-    public DeviceControllerHandAnimator(InputDevice targetDevice) : base(targetDevice) { }
-    public override GameObject getPrefab()
+    public DeviceControllerHandAnimator(GameObject spawnedGameObject) : base(spawnedGameObject)
     {
-        GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
-        if (prefab == null)
-        {
-            prefab = controllerPrefabs[0];
-        }
-        return prefab;
     }
 
-    public override void UpdateHandAnimation()
+    public override void UpdateHandAnimation(InputDevice targetDevice)
     {
         // noop
     }
