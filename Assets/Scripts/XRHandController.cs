@@ -45,17 +45,17 @@ public class XRHandController : MonoBehaviour
         }
 
         List<InputDevice> allInputDevices = new List<InputDevice>();
-        InputDevices.GetDevices(allInputDevices);
-        Debug.Log(allInputDevices.Count);
-        foreach(InputDevice inputDevice in allInputDevices)
-        {
-            Debug.Log(inputDevice.characteristics);
-        }
+        //InputDevices.GetDevices(allInputDevices);
+        //Debug.Log(allInputDevices.Count);
+        //foreach(InputDevice inputDevice in allInputDevices)
+        //{
+        //    Debug.Log(inputDevice.characteristics);
+        //}
 
         List<InputDevice> inputDevices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, inputDevices);
 
-        Debug.Log("Found Input Devices: " + inputDevices.Count);
+        //Debug.Log("Found Input Devices: " + inputDevices.Count);
 
         return inputDevices[0];
     }
