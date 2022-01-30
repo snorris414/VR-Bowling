@@ -1,0 +1,11 @@
+Model Information:
+* title:	Beretta[lowpoly]
+* source:	https://sketchfab.com/3d-models/berettalowpoly-c4977b72ed3f47b1964f7acd6bd88ce7
+* author:	Man3gga (https://sketchfab.com/meshandmodel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Beretta[lowpoly]" (https://sketchfab.com/3d-models/berettalowpoly-c4977b72ed3f47b1964f7acd6bd88ce7) by Man3gga (https://sketchfab.com/meshandmodel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
